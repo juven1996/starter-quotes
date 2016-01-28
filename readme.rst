@@ -1,3 +1,13 @@
+######################
+Team Members
+######################
+
+Matthew Semeniuk
+Juven Ardine Hernanto Putra
+Grayden Hormes
+
+Using Allmnan style convention.
+
 #######################
 Starter Webapp - Quotes
 #######################
