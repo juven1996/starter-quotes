@@ -6,7 +6,7 @@ Matthew Semeniuk
 Juven Ardine Hernanto Putra
 Grayden Hormes
 
-Using Allmnan style convention.
+Using K&R style convention.
 
 #######################
 Starter Webapp - Quotes
