@@ -4,7 +4,7 @@ Team Members
 
 Matthew Semeniuk
 Juven Ardine Hernanto Putra
-Grayden Hormes
+Grayden I. Hormes
 
 Using K&R style convention.
 
