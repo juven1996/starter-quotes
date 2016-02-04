@@ -43,7 +43,20 @@ $route['404_override'] = '';
 $route['lock/(:any)/(:any)'] = "welcome/shucks";
 $route['show/(:num)'] = "first/gimme/$1";
 $route['([a-z]|[A-Z]){4}/bingo'] = "bingo";
-
-
+$route['sleep'] = "first/zzz";
+$route['dunno'] = function() {
+     $source = "data/a.jpg";
+  
+     if (!file_exists($source)) {
+         show_404($source);
+     } else {
+     //  $this->load->helper('file');
+     //  $mimeType = get_mime_by_extension($source);
+         header("Content-type: image/jpeg");
+         header('Content-Disposition: inline');
+         readfile($source);
+     }
+ };
+$route['comp[0-9]){4}//*'] = "wise/bingo";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

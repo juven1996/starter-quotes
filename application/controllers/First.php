@@ -19,8 +19,17 @@ class First extends Application {
     function gimme($id) {
         $this->data['pagebody'] = 'justone'; // this is the view we want shown
         $source = $this->quotes->get($id);
+        $this->data['pagebody'] = 'justone';	// this is the view we want shown
+    	// build the list of authors, to pass on to our view
+    	$source = $this->quotes->first();
+    	$this->data = array_merge($this->data, $source);
+    	$this->render();
+    }
+
+    function zzz() {
+        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        $source = $this->quotes->get(1);
         $this->data = array_merge($this->data, $source);
         $this->render();
     }
-
 }
